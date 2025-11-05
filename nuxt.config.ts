@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from "nuxt/config";
+const getProjectRoutes = require("./scripts/get-project-routes");
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -10,5 +11,8 @@ export default defineNuxtConfig({
   },
   future: {
     compatibilityVersion: 4,
+  },
+  generate: {
+    routes: getProjectRoutes(),
   },
 })

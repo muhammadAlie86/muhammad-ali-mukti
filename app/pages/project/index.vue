@@ -54,9 +54,9 @@
                 footer: { padding: 'p-6 pt-0' }
               }"
             >
-              <template #header>
-                <img :src="project.image" :alt="project.name" class="w-full h-48 object-cover rounded-t-lg" loading="lazy">
-              </template>
+            <!--   <template #header>
+                <NuxtImg :src="project.image" :alt="project.name" class="w-full h-48 object-cover rounded-t-lg" loading="lazy"/>
+              </template> -->
 
               <h2 class="text-2xl font-bold mb-2 text-cyan-400">{{ project.name }}</h2>
               <p class="text-gray-400 mb-4 min-h-[60px]">{{ project.description }}</p>

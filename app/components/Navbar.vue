@@ -26,7 +26,6 @@
 </template>
 
 <script setup>
-import logo from 'assets/images/ic_logo_programmer_santai.png'
 
 const navItems = [
   { label: 'Home', to: '#home' },

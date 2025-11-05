@@ -8,24 +8,19 @@ const projectsStore = useProjectsStore();
 
 const projectId = parseInt(route.params.id);
 const project = computed(() => projectsStore.getProjectById(projectId));
-
-const imageUrl = computed(() => {
-    const imagePath = project.value?.image;
-    return imagePath ? `/storage/${imagePath}` : null;
-});
 </script>
 <template>
   <section class="bg-slate-800 min-h-screen py-12 text-gray-200">
     <div class="container mx-auto px-6 md:px-12 lg:px-20 max-w-5xl">
       
       <div v-if="project" class="flex flex-col items-center gap-8">
-        <div class="w-full">
-          <img
-            :src="imageUrl"
+       <!--  <div class="w-full">
+          <NuxtImg
+            :src="project.image"
             :alt="project.title"
             class="rounded-lg shadow-lg w-full h-[300px] object-cover" 
             />
-        </div>
+        </div> -->
 
         <div class="w-full text-center"> <h1 class="text-3xl font-bold text-yellow-400 mb-4">
             {{ project.title }}

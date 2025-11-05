@@ -54,7 +54,6 @@
 const skills = [
   { name: 'Kotlin', iconNuxt: 'i-simple-icons-kotlin' },
   { name: 'Java', iconNuxt: 'i-simple-icons-openjdk' },
-  { name: 'Kotlin Coroutines', iconNuxt: 'i-simple-icons-kotlin', shortName: 'Coroutines' },
   { name: 'MVVM/MVI/MVP', iconNuxt: 'i-simple-icons-android' },
   { name: 'Retrofit', iconNuxt: 'i-simple-icons-square', shortName: 'Networking' }, 
   { name: 'Room Database', iconNuxt: 'i-simple-icons-sqlite', shortName: 'Room' },
