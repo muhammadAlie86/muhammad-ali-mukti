@@ -7,7 +7,7 @@ import Home from '~/pages/home.vue'
 import About from '~/pages/about.vue'
 import Skils from '~/pages/skils.vue'
 import Experience from '~/pages/experience.vue'
-import Project from '~/pages/project.vue'
+import Project from '~/pages/project/index.vue'
 import Contact from '~/pages/contact.vue'
 </script>
 

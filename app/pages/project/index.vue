@@ -40,7 +40,7 @@
           <NuxtLink 
             v-for="(project, index) in projects" 
             :key="project.id" 
-            :to="'/project/' + project.id"
+            :to="`/project/${project.id}`"
             :style="{ transitionDelay: index * 100 + 'ms' }"
             class="block transform hover:-translate-y-2 transition-transform duration-300"   >
             <UCard
@@ -65,7 +65,7 @@
                 <h3 class="text-sm font-semibold text-gray-300 mb-2">Technologies Used:</h3>
                 <div class="flex flex-wrap gap-2">
                   <UBadge 
-                    v-for="tech in formatTechnologies(project.technologies)" 
+                    v-for="tech in project.technologies" 
                     :key="tech" 
                     color="cyan" 
                     variant="subtle" 
@@ -85,39 +85,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { computed } from 'vue';
+import { useProjectsStore } from '@/stores/projects';
 
-const projects = ref([
-  // ... data Anda ...
-  {
-    id: 1,
-    name: 'Project A',
-    description: 'This is a description for Project A. It showcases some amazing features and technologies.',
-    technologies: 'Vue.js, Nuxt.js, Tailwind CSS',
-    image: 'https://picsum.photos/seed/project-a/600/400',
-  },
-  {
-    id: 2,
-    name: 'Project B',
-    description: 'Project B is an exciting application built with modern web technologies.',
-    technologies: 'React, Node.js, MongoDB',
-    image: 'https://picsum.photos/seed/project-b/600/400',
-  },
-  {
-    id: 3,
-    name: 'Project C',
-    description: 'A personal portfolio website to showcase my skills and projects.',
-    technologies: 'Vue.js, Nuxt.js, TypeScript',
-    image: 'https://picsum.photos/seed/project-c/600/400',
-  },
-]);
-
-const loading = ref(false);
-const error = ref(null);
-
-// Fungsi untuk mengubah string comma-separated menjadi array
-const formatTechnologies = (techString) => {
-  if (!techString) return [];
-  return techString.split(',').map(tech => tech.trim());
-};
+const projectsStore = useProjectsStore();
+const projects = computed(() => projectsStore.projects);
 </script>
