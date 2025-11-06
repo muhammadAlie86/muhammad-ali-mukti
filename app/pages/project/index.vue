@@ -55,7 +55,8 @@
               }"
             >
               <template #header>
-                <img :src="project.image" :alt="project.name" class="w-full h-48 object-cover rounded-t-lg" loading="lazy"/>
+                <img :src="project.image" :alt="project.name" 
+            class="rounded-lg shadow-lg w-full h-auto object-contain" loading="lazy"/>
               </template>
 
               <h2 class="text-2xl font-bold mb-2 text-sky-400">{{ project.name }}</h2>
