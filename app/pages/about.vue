@@ -2,12 +2,12 @@
   <section id="about" class="bg-gray-900 py-16">
     
     <div class="text-center mb-12">
-      <h2 class="font-extrabold text-3xl uppercase tracking-widest text-cyan-400">
+      <h2 class="font-extrabold text-3xl uppercase tracking-widest text-sky-400">
         About Me
       </h2>
       <div class="flex justify-center items-center mt-3">
         <span class="w-10 h-0.5 bg-white"></span>
-        <span class="w-4 h-0.5 mx-1 bg-cyan-400"></span>
+        <span class="w-4 h-0.5 mx-1 bg-sky-400"></span>
         <span class="w-10 h-0.5 bg-white"></span>
       </div>
     </div>
@@ -15,11 +15,11 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"> 
         <UCard 
          :ui="{ 
-              base: 'transition hover:shadow-cyan-500/50 hover:shadow-xl', 
+              base: 'transition hover:shadow-sky-500/50 hover:shadow-xl', 
               background: 'bg-gray-800', 
               divide: 'divide-gray-700' 
             }"
-            class="w-full bg-gray-800 border border-cyan-400/30 shadow-2xl">
+            class="w-full bg-gray-800 border border-sky-400/30 shadow-2xl">
             
             <div class="flex flex-col md:flex-row items-center md:items-start gap-12">
                 
@@ -28,7 +28,7 @@
                     
                     <p class="text-gray-300 leading-relaxed text-lg mb-4">
                         I am a 
-                        <span class="font-bold text-cyan-400">Software Engineer</span>
+                        <span class="font-bold text-sky-400">Software Engineer</span>
                     </p>
                     
                    <p class="text-gray-400 leading-relaxed mb-4">
@@ -45,7 +45,7 @@
                   </p>
                     
                     <div class="mt-8">
-                        <UButton size="lg" color="cyan" variant="solid" label="Download Resume" icon="i-heroicons-arrow-down-tray-solid" />
+                        <UButton size="lg" color="sky" variant="solid" label="Download Resume" icon="i-heroicons-arrow-down-tray-solid" />
                     </div>
                     
                 </div>

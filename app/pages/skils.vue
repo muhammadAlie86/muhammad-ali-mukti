@@ -4,12 +4,12 @@
       <UContainer>
 
         <div class="text-center mb-12">
-          <h2 class="font-extrabold text-3xl uppercase tracking-widest text-cyan-400">
+          <h2 class="font-extrabold text-3xl uppercase tracking-widest text-sky-400">
             Skills & Technologies
           </h2>
           <div class="flex justify-center items-center mt-3">
             <span class="w-10 h-0.5 bg-white"></span>
-            <span class="w-4 h-0.5 mx-1 bg-cyan-400"></span>
+            <span class="w-4 h-0.5 mx-1 bg-sky-400"></span>
             <span class="w-10 h-0.5 bg-white"></span>
           </div>
         </div>
@@ -21,7 +21,7 @@
             :key="index"
             :ui="{ 
               
-              base: 'transition hover:shadow-cyan-500/50 hover:shadow-xl', 
+              base: 'transition hover:shadow-sky-500/50 hover:shadow-xl', 
               background: 'bg-gray-800', 
               divide: 'divide-gray-700',
               background: 'bg-gray-800',
@@ -34,9 +34,9 @@
               <UIcon 
                 v-if="skill.iconNuxt" 
                 :name="skill.iconNuxt" 
-                class="text-4xl sm:text-5xl text-cyan-400"
+                class="text-4xl sm:text-5xl text-sky-400"
               />
-              <div v-else class="flex items-center justify-center w-full h-full text-cyan-400 font-bold text-sm">
+              <div v-else class="flex items-center justify-center w-full h-full text-sky-400 font-bold text-sm">
                 {{ skill.shortName || skill.name }}
               </div>
             </div>

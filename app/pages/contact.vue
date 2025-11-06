@@ -4,13 +4,13 @@
     class="bg-gray-900 py-16 flex flex-col justify-center items-center min-h-[50vh]"
   >
     <UContainer class="text-center">
-      <h2 class="font-extrabold text-3xl uppercase tracking-widest text-cyan-400">
+      <h2 class="font-extrabold text-3xl uppercase tracking-widest text-sky-400">
         Contact Me
       </h2>
 
       <div class="flex justify-center items-center mt-3 mb-8">
         <span class="w-10 h-0.5 bg-white"></span>
-        <span class="w-4 h-0.5 mx-1 bg-cyan-400"></span>
+        <span class="w-4 h-0.5 mx-1 bg-sky-400"></span>
         <span class="w-10 h-0.5 bg-white"></span>
       </div>
 
@@ -29,7 +29,7 @@
           variant="soft"
           size="lg"
           :icon="contact.icon"
-          class="hover:bg-cyan-400 hover:text-black transition"
+          class="hover:bg-sky-400 hover:text-black transition"
         />
       </div>
     </UContainer>

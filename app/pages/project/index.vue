@@ -5,19 +5,19 @@
         
         <div class="text-center">
           <h2
-            class="font-extrabold text-3xl uppercase tracking-widest text-cyan-400"
+            class="font-extrabold text-3xl uppercase tracking-widest text-sky-400"
           >
             Projects
           </h2>
           <div class="flex justify-center items-center mt-3 mb-12">
             <span class="w-10 h-0.5 bg-white"></span>
-            <span class="w-4 h-0.5 mx-1 bg-cyan-400"></span>
+            <span class="w-4 h-0.5 mx-1 bg-sky-400"></span>
             <span class="w-10 h-0.5 bg-white"></span>
           </div>
         </div>
 
         <div v-if="loading" class="text-center">
-          <UProgress animation="carousel" color="cyan" size="lg" />
+          <UProgress animation="carousel" color="sky" size="lg" />
           <p class="text-gray-400 mt-4">Loading projects...</p>
         </div>
 
@@ -47,7 +47,7 @@
             
               :ui="{ 
                
-              base: 'transition hover:shadow-cyan-500/50 hover:shadow-xl', 
+              base: 'transition hover:shadow-sky-500/50 hover:shadow-xl', 
               background: 'bg-gray-800', 
               divide: 'divide-gray-700' ,
                 body: { padding: 'p-6 flex-grow' },
@@ -58,7 +58,7 @@
                 <img :src="project.image" :alt="project.name" class="w-full h-48 object-cover rounded-t-lg" loading="lazy"/>
               </template>
 
-              <h2 class="text-2xl font-bold mb-2 text-cyan-400">{{ project.name }}</h2>
+              <h2 class="text-2xl font-bold mb-2 text-sky-400">{{ project.name }}</h2>
               <p class="text-gray-400 mb-4 min-h-[60px]">{{ project.description }}</p>
 
               <template #footer>
@@ -67,7 +67,7 @@
                   <UBadge 
                     v-for="tech in project.technologies" 
                     :key="tech" 
-                    color="cyan" 
+                    color="sky" 
                     variant="subtle" 
                     size="sm"
                   >

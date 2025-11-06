@@ -2,7 +2,7 @@
   <div class="flex items-center justify-center min-h-screen bg-gray-900 text-center px-6">
     
     <div>
-      <h1 class="text-9xl font-extrabold text-cyan-400">404</h1>
+      <h1 class="text-9xl font-extrabold text-sky-400">404</h1>
       
       <p class="text-3xl md:text-4xl font-semibold text-white mt-4">
         Page Not Found
@@ -16,7 +16,7 @@
         <UButton 
           to="/" 
           size="xl"
-          color="cyan"
+          color="sky"
           variant="solid"
           label="Go Back Home"
           icon="i-heroicons-arrow-left-start-on-rectangle-solid"

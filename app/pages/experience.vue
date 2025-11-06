@@ -94,13 +94,13 @@ const experiences = [
         
         <div class="text-center">
           <h2
-            class="font-extrabold text-3xl uppercase tracking-widest text-cyan-400"
+            class="font-extrabold text-3xl uppercase tracking-widest text-sky-400"
           >
             Work Experience & Programs
           </h2>
           <div class="flex justify-center items-center mt-3 mb-12">
             <span class="w-10 h-0.5 bg-white"></span>
-            <span class="w-4 h-0.5 mx-1 bg-cyan-400"></span>
+            <span class="w-4 h-0.5 mx-1 bg-sky-400"></span>
             <span class="w-10 h-0.5 bg-white"></span>
           </div>
         </div>
@@ -111,7 +111,7 @@ const experiences = [
             v-for="(exp, index) in experiences" 
             :key="index" 
             :ui="{ 
-              base: 'transition hover:shadow-cyan-500/50 hover:shadow-xl', 
+              base: 'transition hover:shadow-sky-500/50 hover:shadow-xl', 
               background: 'bg-gray-800', 
               divide: 'divide-gray-700' 
             }"
@@ -119,7 +119,7 @@ const experiences = [
             <div class="mb-6">
               <h3 class="text-2xl font-bold text-white">{{ exp.title }}</h3>
               
-              <p class="font-semibold text-xl text-cyan-400 mt-1">{{ exp.company }}</p>
+              <p class="font-semibold text-xl text-sky-400 mt-1">{{ exp.company }}</p>
               
               <p class="text-gray-400 text-sm mt-1">
                 {{ exp.dates }} | {{ exp.location }}
@@ -143,7 +143,7 @@ const experiences = [
                 <UBadge 
                   v-for="(tech, techIndex) in exp.technologies" 
                   :key="techIndex" 
-                  color="cyan" 
+                  color="sky" 
                   variant="subtle" 
                   size="md"
                 >
